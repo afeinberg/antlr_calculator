@@ -11,6 +11,6 @@ public class Main {
         Parser parser = new Parser();
         Node node = parser.parseExpr(expr);
         Interpreter interpreter = new Interpreter();
-        System.out.println(" = " + interpreter.interpret(node));
+        System.out.println(" = " + interpreter.evaluate(node));
     }
 }

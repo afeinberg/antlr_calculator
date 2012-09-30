@@ -2,9 +2,10 @@ package af.calculator.compiler;
 
 import af.calculator.ast.Node;
 
-public class Interpreter {
+public class Interpreter implements Evaluator {
 
-    public double interpret(Node node) {
+    @Override
+    public double evaluate(Node node) {
         InterpreterVisitor visitor = new InterpreterVisitor();
         return node.accept(visitor);
     }

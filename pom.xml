@@ -21,9 +21,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm-all</artifactId>
-            <version>4.0</version>
+            <groupId>me.qmx.jitescript</groupId>
+            <artifactId>jitescript</artifactId>
+            <version>0.2.1</version>
         </dependency>
     </dependencies>
 

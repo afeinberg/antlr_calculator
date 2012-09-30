@@ -21,6 +21,6 @@ expr returns [Node n]
 	| ^(MULTIPLY a=expr b=expr) {n = new MultiplicationNode($a.n, $b.n);}
 	| ^(DIVIDE a=expr b=expr) {n = new DivisionNode($a.n, $b.n);}
 	| ^(POWER a=expr b=expr) {n = new ExponentiationNode($a.n, $b.n);}
-	| ^(UNARYMINUS a=expr) {n=new UnaryMinusNode($a.n);}
+	| ^(UNARYMINUS a=expr) {n = new UnaryMinusNode($a.n);}
 	| DOUBLE {n = new DoubleNode($DOUBLE.text);}
 	;
